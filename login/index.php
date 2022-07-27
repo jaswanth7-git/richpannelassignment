@@ -140,7 +140,12 @@ include('./db_connect.php');
     </div>
     
 </section>
-
+<center>
+    <div class="bottom">
+        
+<!-- <a href="./active.php"><button class="button-66" role="button">Active Plans</button></a> -->
+    </div>
+</center>
 </body>
 </html>
 

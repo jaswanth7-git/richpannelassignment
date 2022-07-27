@@ -1,4 +1,4 @@
-
+<?php include('header.php') ?>
 <html>
   <head><title>Thanks for your order!</title></head>
   <body>
@@ -9,7 +9,7 @@
       <a href="index.php">HOME</a>.</center>
       <?php 
       
-      $sql = "UPDATE `users` SET `plan`='1' WHERE 1"
+      //$sql = "UPDATE `users` SET `plan`='1' WHERE 1"
       
       ?>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
