@@ -1,13 +1,13 @@
 
 <?php
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
  \Stripe\Stripe::setApiKey('sk_test_51LPizHIrSSwbV91tyLyionwbybzk6VJWAgj0FEY2YtehIBGjIqrRfENbIJLt3WsM2xGrbanhrSffWvWYEkAIpLpv00nPoocgWH');
 
 
 
  
   $checkout_session = \Stripe\Checkout\Session::create([
-      'success_url' => 'http://localhost:8000/subs/success.php',
+      'success_url' => 'http://localhost:8000/richpannelassignment/login/success.php',
       'cancel_url' => 'http://localhost/stripe-subscription/cancel.html',
       'payment_method_types' => ['card'],
       'mode' => 'subscription',
