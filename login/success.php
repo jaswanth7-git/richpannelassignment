@@ -14,7 +14,8 @@
       ?>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
       <center>
-<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_nfbtru7n.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_rgige06u.json"  background="transparent"  speed="1"  style="width: 700px; height: 700px;"  loop  autoplay></lottie-player>
 </center> </p>
   </body>
 </html>

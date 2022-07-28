@@ -1,16 +1,17 @@
 <?php 
 session_start();
 
+
+
 include('./db_connect.php');
 ?>
-<title>Welcome </title>
-<script type="text/javascript" src="script/ajax.js"></script>
+
 <?php 
 
 ?>
 
 
-			<ul class="nav navbar-nav navbar-left">
+			
 				<?php 
                 
                 
@@ -62,16 +63,8 @@ include('./db_connect.php');
 
 				<?php //} ?>
 	
-				<!DOCTYPE html>
-<html>
-<head>
 
 
-<?php
-
-
-
-?>
 
 
 
@@ -85,7 +78,16 @@ include('./db_connect.php');
     <link rel="stylesheet" href="./css/price.css">
     <title>Document</title>
 </head>
+
+
+
 <body>
+    <nav>
+    <ul>
+        <li><a href="#">Jaswanth Alla</a></li>
+        <li><a href="./active.php">Active Plans</a></li>
+    </ul>
+    </nav>
     <h1>Pricing</h1>
     <div class="cont">
     <p class="category">Monthly</p>
@@ -158,22 +160,16 @@ a.addEventListener('change', function() {
         document.getElementById("p2").innerHTML = "<p id='p2'><span class='price'>$1349.99</span>/Year</p>";
         document.getElementById("p3").innerHTML = "<p id='p3'><span class='price'>$1599.99</span>/Year</p>";
     } else {
-        document.getElementById("p0").innerHTML = "<p id='p0'><span class='price'>$29.99</span>/Year</p>";
-        document.getElementById("p1").innerHTML = "<p id='p1'><span class='price'>$34.99</span>/Year</p>";
-        document.getElementById("p2").innerHTML = "<p id='p2'><span class='price'>$49.99</span>/Year</p>";
-        document.getElementById("p3").innerHTML = "<p id='p3'><span class='price'>$99.99</span>/Year</p>";
+        document.getElementById("p0").innerHTML = "<p id='p0'><span class='price'>$29.99</span>/month</p>";
+        document.getElementById("p1").innerHTML = "<p id='p1'><span class='price'>$34.99</span>/month</p>";
+        document.getElementById("p2").innerHTML = "<p id='p2'><span class='price'>$49.99</span>/month</p>";
+        document.getElementById("p3").innerHTML = "<p id='p3'><span class='price'>$99.99</span>/month</p>";
     }
   });
 
 
 
 </script>
-<center>
-    <div class="bottom">
-        
-<!-- <a href="./active.php"><button class="button-66" role="button">Active Plans</button></a> -->
-    </div>
-</center>
 </body>
 </html>
 
