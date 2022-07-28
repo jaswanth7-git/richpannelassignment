@@ -66,6 +66,15 @@ include('./db_connect.php');
 <html>
 <head>
 
+
+<?php
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +89,7 @@ include('./db_connect.php');
     <h1>Pricing</h1>
     <div class="cont">
     <p class="category">Monthly</p>
-    <input class="switch" type="checkbox" >
+    <input id="toggle" class="switch" type="checkbox" >
     <p class="category">Yearly</p>
 </div>
     <section id="pricing">
@@ -88,7 +97,7 @@ include('./db_connect.php');
         <div class="col-lg-3 col-md-6 col-12">
             <div class="price-card">
                 <p class="plan">Mobile<p>
-                <p ><span class="price">$29.99</span>/month</p>
+                <p id="p0" ><span class="price">$29.99</span>/month</p>
                 <div class="features">
                 <p >Good Video Quality</p>
                 <p>480p Resolution</p>
@@ -102,7 +111,7 @@ include('./db_connect.php');
         <div class="col-lg-3 col-md-6 col-12">
             <div class="price-card">
                 <p class="plan">Basic<p>
-                    <p ><span class="price">$34.00</span>/month</p>
+                    <p id="p1" ><span class="price">$34.00</span>/month</p>
                     <div class="features">
                     <p >Good Video Quality</p>
                     <p>480p Resolution</p>
@@ -115,7 +124,7 @@ include('./db_connect.php');
         <div class="col-lg-3 col-md-6 col-12">
             <div class="price-card">
                 <p class="plan">Standard<p>
-                    <p ><span class="price">Rs49.99</span>/month</p>
+                    <p id="p2"><span class="price">Rs49.99</span>/month</p>
                     <div class="features">
                     <p >Better Video Quality</p>
                     <p>1080p Resolution</p>
@@ -127,7 +136,7 @@ include('./db_connect.php');
         <div class="col-lg-3 col-md-6 col-12">
             <div class="price-card">
                 <p class="plan">Premium<p>
-                    <p ><span class="price">$99.99</span>/month</p>
+                    <p id="p3"><span class="price">$99.99</span>/month</p>
                     <div class="features">
                     <p >Best Video Quality</p>
                     <p>4K+HDR Resolution</p>
@@ -140,6 +149,25 @@ include('./db_connect.php');
     </div>
     
 </section>
+<script>
+var a = document.getElementById("toggle")
+a.addEventListener('change', function() {
+    if (this.checked) {
+        document.getElementById("p0").innerHTML = "<p id='p0'><span class='price'>$1109.99</span>/Year</p>";
+        document.getElementById("p1").innerHTML = "<p id='p1'><span class='price'>$1229.99</span>/Year</p>";
+        document.getElementById("p2").innerHTML = "<p id='p2'><span class='price'>$1349.99</span>/Year</p>";
+        document.getElementById("p3").innerHTML = "<p id='p3'><span class='price'>$1599.99</span>/Year</p>";
+    } else {
+        document.getElementById("p0").innerHTML = "<p id='p0'><span class='price'>$29.99</span>/Year</p>";
+        document.getElementById("p1").innerHTML = "<p id='p1'><span class='price'>$34.99</span>/Year</p>";
+        document.getElementById("p2").innerHTML = "<p id='p2'><span class='price'>$49.99</span>/Year</p>";
+        document.getElementById("p3").innerHTML = "<p id='p3'><span class='price'>$99.99</span>/Year</p>";
+    }
+  });
+
+
+
+</script>
 <center>
     <div class="bottom">
         

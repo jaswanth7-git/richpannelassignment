@@ -1,10 +1,6 @@
 <?php
 require '../vendor/autoload.php';
  \Stripe\Stripe::setApiKey('sk_test_51LPizHIrSSwbV91tyLyionwbybzk6VJWAgj0FEY2YtehIBGjIqrRfENbIJLt3WsM2xGrbanhrSffWvWYEkAIpLpv00nPoocgWH');
-
-
-
- 
   $checkout_session = \Stripe\Checkout\Session::create([
       'success_url' => 'http://localhost:8000/richpannelassignment/login/success.php',
       'cancel_url' => 'http://localhost/stripe-subscription/cancel.html',
@@ -12,7 +8,6 @@ require '../vendor/autoload.php';
       'mode' => 'subscription',
       'line_items' => [[
         'price' => "price_1LPnc8IrSSwbV91tHb1V0DvP",
-        
         // For metered billing, do not pass quantity
         'quantity' => 1,
       ]],
