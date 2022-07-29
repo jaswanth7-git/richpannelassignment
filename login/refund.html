@@ -1,18 +1,27 @@
-
 <?php include('header.php'); ?>
 <html>
   <head><title>You cancelled your order!</title></head>
   <body>
-   <center><h1>You cancelled your order!</h1>
+    <center><h1 style="font-size: 2.2rem;">You cancelled your order!</h1></center> 
+    <div class="All">
+
+    
+    <center>
     <p>
-      refund amount will reflect with in 15 working days, Go back 
-      <a href="login/index.php">HOME</a></center> 
+      Refund initiated and should reflect you with in 15 working days <br>
+    </p>
+     Thanks for subscribing us ! </p>
+     <p>
+      <a href="login/index.php">HOME</a>
       <!-- $sql = "UPDATE `users` SET `plan`='0' WHERE 1" -->
     </p>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <center>
-<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_IrWG35.json"  background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
-</center> </body>
+<lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_ns1jrplu.json"  background="transparent"  speed="3"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+
+
+</center> 
+</div>
+</body>
 </html>
 <!-- <?php
 // $stripe = new \Stripe\StripeClient(
@@ -27,3 +36,25 @@
 <?php
 include('./footer');
 ?>
+<style>
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  body{
+    background-color: #eaedf8 !important;
+  }
+  .all{
+background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    width: 55vw;
+    margin: auto;
+    padding: 2rem;
+    font-size: 1.1rem;
+
+  }
+  p{
+    margin-bottom: .6rem;
+  }
+</style>
